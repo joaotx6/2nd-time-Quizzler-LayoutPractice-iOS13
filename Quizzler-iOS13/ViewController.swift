@@ -46,15 +46,15 @@ class ViewController: UIViewController {
         }
         
         
-        //controlar o erro, como so tem 3 posiçoes no []
-        if questionNumber < 2 {
+        //controlar o erro, pra n entrar em out of range
+        if questionNumber + 1 < quiz.count {
             questionNumber += 1
         } else {
             print("Out of index, resetting")
-            questionNumber = 0
+            questionNumber = 0 //resetting the quiz questions to beggining
         }
         
-        ///Nao avançar se estivermos no limite do array.
+        
 //        if questionNumber == 2 {
 //        questionNumber = questionNumber + 0
 //    } else {
