@@ -9,7 +9,7 @@
 import Foundation
 
 struct Question {
-   
+    
     let text: String
     let answer: String
     
@@ -17,7 +17,6 @@ struct Question {
         self.text = q
         self.answer = a
     }
-    
 }
 
 
